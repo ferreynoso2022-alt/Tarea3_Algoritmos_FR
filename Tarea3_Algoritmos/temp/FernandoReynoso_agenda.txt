@@ -1,0 +1,6 @@
+Agenda de Tareas:
+1.Creacion de sistemas
+2.La nueva era
+3.Java y arrays
+4.Documentacion correcta
+5.Escritura de clean code
