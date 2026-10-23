@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package umg.tarea3_algoritmos;
 
@@ -8,12 +8,14 @@ package umg.tarea3_algoritmos;
  *
  * @author Fernando Rey
  */
-public class Clases_y_Objetos extends javax.swing.JPanel {
+public class ClasesyObjetos extends javax.swing.JFrame {
+    
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ClasesyObjetos.class.getName());
 
     /**
-     * Creates new form Clases_y_Objetos
+     * Creates new form ClasesyObjetos
      */
-    public Clases_y_Objetos() {
+    public ClasesyObjetos() {
         initComponents();
     }
 
@@ -26,16 +28,12 @@ public class Clases_y_Objetos extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jEditorPane1 = new javax.swing.JEditorPane();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        txtNombre = new javax.swing.JTextField();
-        txtPais = new javax.swing.JTextField();
-        txtOyentes = new javax.swing.JTextField();
-        btnCrearArtista = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        labelTitulo = new javax.swing.JLabel();
+        labelInterprete = new javax.swing.JLabel();
+        labelGenero = new javax.swing.JLabel();
+        labelDuracion = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -46,42 +44,18 @@ public class Clases_y_Objetos extends javax.swing.JPanel {
         txtDuracion = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         labelNombre = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        txtNombre = new javax.swing.JTextField();
+        txtPais = new javax.swing.JTextField();
+        txtOyentes = new javax.swing.JTextField();
+        btnCrearArtista = new javax.swing.JButton();
         labelPais = new javax.swing.JLabel();
         labelOyentes = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        labelTitulo = new javax.swing.JLabel();
-        labelInterprete = new javax.swing.JLabel();
-        labelGenero = new javax.swing.JLabel();
-        labelDuracion = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
 
-        jScrollPane1.setViewportView(jEditorPane1);
-
-        jLabel1.setText("Datos del Artista");
-
-        jLabel2.setText("Nombre:");
-
-        jLabel3.setText("Pais de Origen");
-
-        jLabel4.setText("Oyentes Mensuales");
-
-        btnCrearArtista.setText("Crear Artista");
-
-        jLabel5.setText("Titulo");
-
-        jLabel6.setText("Interprete");
-
-        jLabel7.setText("Duracion");
-
-        btnCrearCancion.setText("Crear Cancion");
-
-        jLabel8.setText("Creaste al Artista:");
-
-        labelNombre.setText("-Nombre-");
-
-        labelPais.setText("-Pais-");
-
-        labelOyentes.setText("-Oyentes Mensuales-");
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel12.setText("Creaste la Cancion:");
 
@@ -95,8 +69,34 @@ public class Clases_y_Objetos extends javax.swing.JPanel {
 
         jLabel17.setText("Genero");
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        jLabel5.setText("Titulo");
+
+        jLabel6.setText("Interprete");
+
+        jLabel7.setText("Duracion");
+
+        btnCrearCancion.setText("Crear Cancion");
+
+        jLabel8.setText("Creaste al Artista:");
+
+        labelNombre.setText("-Nombre-");
+
+        jLabel1.setText("Datos del Artista");
+
+        jLabel2.setText("Nombre:");
+
+        jLabel3.setText("Pais de Origen");
+
+        jLabel4.setText("Oyentes Mensuales");
+
+        btnCrearArtista.setText("Crear Artista");
+
+        labelPais.setText("-Pais-");
+
+        labelOyentes.setText("-Oyentes Mensuales-");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -149,7 +149,7 @@ public class Clases_y_Objetos extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(313, 313, 313)
                         .addComponent(btnCrearCancion)))
-                .addContainerGap(173, Short.MAX_VALUE))
+                .addContainerGap(200, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -188,7 +188,7 @@ public class Clases_y_Objetos extends javax.swing.JPanel {
                     .addComponent(jLabel17))
                 .addGap(18, 18, 18)
                 .addComponent(btnCrearCancion)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel8)
@@ -210,13 +210,38 @@ public class Clases_y_Objetos extends javax.swing.JPanel {
                         .addComponent(labelGenero)))
                 .addGap(70, 70, 70))
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
+            logger.log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(() -> new ClasesyObjetos().setVisible(true));
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCrearArtista;
     private javax.swing.JButton btnCrearCancion;
-    private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel17;
@@ -227,7 +252,6 @@ public class Clases_y_Objetos extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel labelDuracion;
     private javax.swing.JLabel labelGenero;
     private javax.swing.JLabel labelInterprete;
