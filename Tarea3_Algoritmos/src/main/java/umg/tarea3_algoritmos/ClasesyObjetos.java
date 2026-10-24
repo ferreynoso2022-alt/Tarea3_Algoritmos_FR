@@ -40,7 +40,7 @@ public class ClasesyObjetos extends javax.swing.JFrame {
         Cancion cancion = new Cancion(titulo, interprete, duracion, genero);
 
         txtAreaRegistros.append("Cancion Creada"+"\n");
-        txtAreaRegistros.append(cancion.titulo+" | "+cancion.interprete+" | "+cancion.duracion+" | "+cancion.genero+"\n");
+        txtAreaRegistros.append(cancion.titulo+" | "+cancion.interprete+" | "+"Duracion: "+cancion.duracion+" seg"+" | "+cancion.genero+"\n");
 
     }
 
