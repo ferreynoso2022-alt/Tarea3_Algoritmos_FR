@@ -193,7 +193,7 @@ public class ClasesyObjetos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCrearArtistaActionPerformed
 
     private void btnCrearCancionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearCancionActionPerformed
-        // TODO add your handling code here:
+        CrearCancion();
     }//GEN-LAST:event_btnCrearCancionActionPerformed
 
     /**
