@@ -19,6 +19,18 @@ public class ClasesyObjetos extends javax.swing.JFrame {
         initComponents();
     }
 
+    public void CrearArtista(){
+        String nombre = txtNombre.getText();
+        String pais = txtPais.getText();
+        int oyentes = Integer.parseInt(txtOyentes.getText());
+
+        Artista artista = new Artista(nombre, pais, oyentes);
+
+        txtAreaRegistros.append("Artista Creado"+"\n");
+        txtAreaRegistros.append(artista.nombre+" | "+artista.pais+" | "+artista.oyentes+"\n");
+
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,11 +40,6 @@ public class ClasesyObjetos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel12 = new javax.swing.JLabel();
-        labelTitulo = new javax.swing.JLabel();
-        labelInterprete = new javax.swing.JLabel();
-        labelGenero = new javax.swing.JLabel();
-        labelDuracion = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -42,8 +49,6 @@ public class ClasesyObjetos extends javax.swing.JFrame {
         txtGenero = new javax.swing.JTextField();
         btnCrearCancion = new javax.swing.JButton();
         txtDuracion = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        labelNombre = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -52,20 +57,10 @@ public class ClasesyObjetos extends javax.swing.JFrame {
         txtPais = new javax.swing.JTextField();
         txtOyentes = new javax.swing.JTextField();
         btnCrearArtista = new javax.swing.JButton();
-        labelPais = new javax.swing.JLabel();
-        labelOyentes = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtAreaRegistros = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel12.setText("Creaste la Cancion:");
-
-        labelTitulo.setText("Titulo");
-
-        labelInterprete.setText("Interprete");
-
-        labelGenero.setText("Genero");
-
-        labelDuracion.setText("Duracion");
 
         jLabel17.setText("Genero");
 
@@ -76,10 +71,7 @@ public class ClasesyObjetos extends javax.swing.JFrame {
         jLabel7.setText("Duracion");
 
         btnCrearCancion.setText("Crear Cancion");
-
-        jLabel8.setText("Creaste al Artista:");
-
-        labelNombre.setText("-Nombre-");
+        btnCrearCancion.addActionListener(this::btnCrearCancionActionPerformed);
 
         jLabel1.setText("Datos del Artista");
 
@@ -90,10 +82,11 @@ public class ClasesyObjetos extends javax.swing.JFrame {
         jLabel4.setText("Oyentes Mensuales");
 
         btnCrearArtista.setText("Crear Artista");
+        btnCrearArtista.addActionListener(this::btnCrearArtistaActionPerformed);
 
-        labelPais.setText("-Pais-");
-
-        labelOyentes.setText("-Oyentes Mensuales-");
+        txtAreaRegistros.setColumns(20);
+        txtAreaRegistros.setRows(5);
+        jScrollPane1.setViewportView(txtAreaRegistros);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -111,29 +104,14 @@ public class ClasesyObjetos extends javax.swing.JFrame {
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jLabel6)
                                         .addComponent(jLabel7)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(labelOyentes)
-                                            .addComponent(labelNombre, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(labelPais, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING))
                                         .addComponent(jLabel5)
                                         .addComponent(jLabel17))
+                                    .addGap(98, 98, 98)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(37, 37, 37)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(txtInterprete, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(txtGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(txtDuracion, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(txtTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(210, 210, 210)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jLabel12)
-                                                .addComponent(labelTitulo, javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(labelInterprete, javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(labelGenero, javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(labelDuracion, javax.swing.GroupLayout.Alignment.LEADING)))))
+                                        .addComponent(txtInterprete, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtDuracion, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGroup(layout.createSequentialGroup()
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jLabel3)
@@ -142,14 +120,15 @@ public class ClasesyObjetos extends javax.swing.JFrame {
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(txtPais, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(txtOyentes, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(313, 313, 313)
                         .addComponent(btnCrearArtista))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(313, 313, 313)
                         .addComponent(btnCrearCancion)))
-                .addContainerGap(200, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -188,31 +167,21 @@ public class ClasesyObjetos extends javax.swing.JFrame {
                     .addComponent(jLabel17))
                 .addGap(18, 18, 18)
                 .addComponent(btnCrearCancion)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addGap(18, 18, 18)
-                        .addComponent(labelNombre)
-                        .addGap(18, 18, 18)
-                        .addComponent(labelPais)
-                        .addGap(18, 18, 18)
-                        .addComponent(labelOyentes))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(labelTitulo)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(labelInterprete)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(labelDuracion)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(labelGenero)))
-                .addGap(70, 70, 70))
+                .addGap(29, 29, 29)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCrearArtistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearArtistaActionPerformed
+        CrearArtista();
+    }//GEN-LAST:event_btnCrearArtistaActionPerformed
+
+    private void btnCrearCancionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearCancionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCrearCancionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -243,7 +212,6 @@ public class ClasesyObjetos extends javax.swing.JFrame {
     private javax.swing.JButton btnCrearArtista;
     private javax.swing.JButton btnCrearCancion;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -251,14 +219,8 @@ public class ClasesyObjetos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel labelDuracion;
-    private javax.swing.JLabel labelGenero;
-    private javax.swing.JLabel labelInterprete;
-    private javax.swing.JLabel labelNombre;
-    private javax.swing.JLabel labelOyentes;
-    private javax.swing.JLabel labelPais;
-    private javax.swing.JLabel labelTitulo;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea txtAreaRegistros;
     private javax.swing.JTextField txtDuracion;
     private javax.swing.JTextField txtGenero;
     private javax.swing.JTextField txtInterprete;

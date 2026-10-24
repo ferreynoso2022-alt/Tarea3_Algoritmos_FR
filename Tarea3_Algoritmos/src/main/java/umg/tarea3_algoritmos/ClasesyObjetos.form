@@ -35,35 +35,15 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                          <Component id="labelOyentes" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="labelNombre" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="labelPais" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
                                       <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                                  <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="txtInterprete" alignment="0" min="-2" pref="345" max="-2" attributes="0"/>
-                                              <Component id="txtGenero" alignment="0" min="-2" pref="345" max="-2" attributes="0"/>
-                                              <Component id="txtDuracion" alignment="0" min="-2" pref="345" max="-2" attributes="0"/>
-                                              <Component id="txtTitulo" alignment="0" min="-2" pref="345" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="210" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="jLabel12" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="labelTitulo" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="labelInterprete" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="labelGenero" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="labelDuracion" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
+                                      <Component id="txtInterprete" alignment="0" min="-2" pref="345" max="-2" attributes="0"/>
+                                      <Component id="txtGenero" alignment="0" min="-2" pref="345" max="-2" attributes="0"/>
+                                      <Component id="txtDuracion" alignment="0" min="-2" pref="345" max="-2" attributes="0"/>
+                                      <Component id="txtTitulo" alignment="0" min="-2" pref="345" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
@@ -79,6 +59,7 @@
                                   </Group>
                               </Group>
                           </Group>
+                          <Component id="jScrollPane1" min="-2" pref="651" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -90,7 +71,7 @@
                       <Component id="btnCrearCancion" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="200" max="32767" attributes="0"/>
+              <EmptySpace pref="43" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -138,60 +119,14 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnCrearCancion" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="42" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="labelNombre" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="labelPais" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="labelOyentes" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="labelTitulo" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="labelInterprete" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="labelDuracion" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="labelGenero" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="147" max="-2" attributes="0"/>
+              <EmptySpace pref="54" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel12">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Creaste la Cancion:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="labelTitulo">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Titulo"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="labelInterprete">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Interprete"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="labelGenero">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Genero"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="labelDuracion">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Duracion"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel17">
       <Properties>
         <Property name="text" type="java.lang.String" value="Genero"/>
@@ -222,18 +157,11 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Crear Cancion"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCrearCancionActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtDuracion">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel8">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Creaste al Artista:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="labelNombre">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="-Nombre-"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
@@ -265,16 +193,24 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Crear Artista"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCrearArtistaActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="labelPais">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="-Pais-"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="labelOyentes">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="-Oyentes Mensuales-"/>
-      </Properties>
-    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="txtAreaRegistros">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>
