@@ -31,6 +31,19 @@ public class ClasesyObjetos extends javax.swing.JFrame {
 
     }
 
+    public void CrearCancion(){
+        String titulo = txtTitulo.getText();
+        String interprete = txtInterprete.getText();
+        int duracion = Integer.parseInt(txtDuracion.getText());
+        String genero = txtGenero.getText();
+
+        Cancion cancion = new Cancion(titulo, interprete, duracion, genero);
+
+        txtAreaRegistros.append("Cancion Creada"+"\n");
+        txtAreaRegistros.append(cancion.titulo+" | "+cancion.interprete+" | "+cancion.duracion+" | "+cancion.genero+"\n");
+
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
