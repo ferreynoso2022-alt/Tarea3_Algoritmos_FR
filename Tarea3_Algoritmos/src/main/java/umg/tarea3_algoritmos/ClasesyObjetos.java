@@ -29,6 +29,10 @@ public class ClasesyObjetos extends javax.swing.JFrame {
         txtAreaRegistros.append("Artista Creado"+"\n");
         txtAreaRegistros.append(artista.nombre+" | "+artista.pais+" | "+artista.oyentes+"\n");
 
+        txtNombre.setText("");
+        txtPais.setText("");
+        txtOyentes.setText("");
+
     }
 
     public void CrearCancion(){
@@ -41,6 +45,11 @@ public class ClasesyObjetos extends javax.swing.JFrame {
 
         txtAreaRegistros.append("Cancion Creada"+"\n");
         txtAreaRegistros.append(cancion.titulo+" | "+cancion.interprete+" | "+"Duracion: "+cancion.duracion+" seg"+" | "+cancion.genero+"\n");
+
+        txtTitulo.setText("");
+        txtInterprete.setText("");
+        txtDuracion.setText("");
+        txtGenero.setText("");
 
     }
 
